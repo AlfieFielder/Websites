@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="EvolveCustom.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">       
+
+    </asp:ContentPlaceHolder>
+
+    <!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="content/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <div id="main-header">
+			<header id="main-header-section">
+				<div class="container">
+					<div class="nav-header">
+					    <nav id="main-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="main-primary-menu">
+                                <li><a href="Default.aspx">Home</a></li>
+                                <li><a href="Default.aspx">Meeting Dates</a></li>
+                                <li><a href="Default.aspx">Can We Help You?</a></li>
+                                <li><a href="Default.aspx">Case Studies</a></li>
+                                <li><a href="Default.aspx">Contact Evolve</a></li>
+                            </ul>
+					    </nav>
+					</div>
+		        </div>
+			</header>
+			
+		</div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- jQuery -->
+	<script src="Scripts/jquery-3.0.0.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="Scripts/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
